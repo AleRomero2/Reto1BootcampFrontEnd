@@ -1,2 +1,2 @@
 # BlogPersonal
-Blog personal realizado con React
+Reto 1 de la Bootcamp Front-End

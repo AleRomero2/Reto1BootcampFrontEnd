@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Blog Personal Alejandro Romero</title>
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="center">
+        <!-- Logo-->
+        <div class="logo" id="logo">
+          <img
+            src="assets/images/programador2.svg"
+            class="app-logo"
+            alt="Logotipo"
+          />
+          <span id="brand"> <strong>Alejandro</strong>Romero </span>
+        </div>
+        <!--Menú de nav-->
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="blog.html">Inicio</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contáctame</a>
+            </li>
+            <li>
+              <a href="#">GitHub</a>
+            </li>
+          </ul>
+        </nav>
+        <!--LIMPIAR FLOTADOS-->
+        <div class="clearfix"></div>
+      </div>
+    </header>
+    <div class="contact_form">
+      <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <h3>Escribe tu consulta y responderé lo antes posible</h3>
+
+        <form>
+          <p>
+            <label for="nombre" class="colocar_nombre"
+              >Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="text"
+              name="introducir_nombre"
+              id="nombre"
+              required="obligatorio"
+              placeholder="Escribe tu nombre"
+            />
+          </p>
+
+          <p>
+            <label for="email" class="colocar_email"
+              >Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="email"
+              name="introducir_email"
+              id="email"
+              required="obligatorio"
+              placeholder="Escribe tu Email"
+            />
+          </p>
+
+          <p>
+            <label for="telefone" class="colocar_telefono">Teléfono </label>
+            <input
+              type="tel"
+              name="introducir_telefono"
+              id="telefono"
+              placeholder="Escribe tu teléfono"
+            />
+          </p>
+
+          <p>
+            <label for="website" class="colocar_website">Sitio web </label>
+            <input
+              type="url"
+              name="introducir_website"
+              id="website"
+              placeholder="Escribe la URL de tu web"
+            />
+          </p>
+
+          <p>
+            <label for="asunto" class="colocar_asunto"
+              >Asunto
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="text"
+              name="introducir_asunto"
+              id="assunto"
+              required="obligatorio"
+              placeholder="Escribe un asunto"
+            />
+          </p>
+
+          <p>
+            <label for="mensaje" class="colocar_mensaje"
+              >Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea
+              name="introducir_mensaje"
+              class="texto_mensaje"
+              id="mensaje"
+              required="obligatorio"
+              placeholder="Deja aquí tu comentario..."
+            ></textarea>
+          </p>
+
+          <button type="submit" class="btn-green">
+            <p>Enviar</p>
+          </button>
+
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
